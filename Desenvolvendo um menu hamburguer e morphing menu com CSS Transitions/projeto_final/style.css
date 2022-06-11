@@ -132,7 +132,7 @@ a:hover {
 }
 
 .menu-items {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -237,6 +237,15 @@ a:hover {
     color: rgb(109, 109, 109);
 }
 
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .card-wrapper::before {
     content: '';
     position: absolute;
@@ -273,4 +282,52 @@ a:hover {
     opacity: 1;
     width: 350px;
     height: 250px;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E1C2B;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .container .card-container:nth-child(1),
+    .container .card-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover > .card-wrapper::before {
+        height: 190px;
+        width: 190px;
+    }
 }
