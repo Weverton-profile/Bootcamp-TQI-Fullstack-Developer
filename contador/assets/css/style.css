@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'amatic sc', sans-serif;
+}
+
+html, body {
+    color: #ffffff;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(-45deg, #8B2323, #CD3333, #EE3B3B, #8B1A1A);
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: backgroundTransition 8s ease-in-out infinite;
+}
+
+.header h1, p {
+    font-size: 2em;
+}
+
+.container {
+    height: 70%;
+    padding-top: 10%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;    */
+    text-align: center;
+}
+
+.container button {
+    height: 80px;
+    width: 80px;
+    font-size: 2em;
+    margin: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #EE3B3B;
+}
+
+.container button:hover {
+    background-color: #CD3333;
+}
+
+.container span {
+    color: #000000;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF4040;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 80%;
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
+}
