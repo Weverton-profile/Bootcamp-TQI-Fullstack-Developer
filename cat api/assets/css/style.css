@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'amatic sc', sans-serif;
+}
+
+html, body {
+    color: #ffffff;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #000000;
+}
+
+button {
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+}
