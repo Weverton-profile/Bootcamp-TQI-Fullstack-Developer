@@ -28,7 +28,8 @@ html, body {
 }
 
 button {
-    background-color: #C1CDCD;
+    background-color: #000000;
+    color: #FFFFFF;
     margin-bottom: 10px;
     font-size: 1.5em;
     font-weight: bolder;
@@ -38,7 +39,6 @@ button {
 }
 
 button:hover {
-    background-color: rgb(180, 190, 190);
     cursor: pointer;
 }
 
