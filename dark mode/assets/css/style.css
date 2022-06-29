@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'amatic sc', sans-serif;
+}
+
+html, body {
+    background-color: #C1CDCD;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    background-color: #C1CDCD;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(180, 190, 190);
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    font-size: 2.5em;
+}
+
+h3 {
+    margin-bottom: 160px;
+}
+
+body.dark-mode {
+    background-color: #838B8B;
+}
+
+div.dark-mode {
+    background-color: black;
+}
+
+h1.dark-mode, h2.dark-mode, h3.dark-mode {
+    color: #FFFFFF;
+}
+
+button.dark-mode {
+    background-color: #FFFFFF;
+    color: #000000;
+}
